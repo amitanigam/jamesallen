@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1b1b1b;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #1b1b1b;
   }
 }
 
@@ -23,4 +23,38 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* globals.css mein add karein (Tailwind directives ke baad) */
+
+/* Nav link underline animation */
+.nav-link {
+  position: relative;
+  padding-bottom: 0.25rem;
+  /* thoda gap for underline */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, #111827, #6b7280);
+  /* dark → gray gradient */
+  transition: width 180ms ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+}
+
+/* Optional small tweak for mobile links to look good */
+@media (max-width: 1023px) {
+  .nav-link {
+    padding-bottom: 0.125rem;
+  }
 }
