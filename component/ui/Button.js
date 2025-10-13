@@ -8,7 +8,7 @@ const VARIANT_CLASSES = {
     // ✅ v3 custom: 15px font, 12px 27px padding, pink hover
     v3: `
     relative overflow-hidden border border-black bg-white text-black
-    text-[15px] px-[27px] py-[12px]
+    text-[15px] px-[4px] py-[12px]
     transition-all duration-500 ease-out
     group
   `,
