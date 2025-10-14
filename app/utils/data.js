@@ -71,3 +71,76 @@ export const LogoData = [
         image: logo9
     }
 ]
+
+
+import ring1 from "@/public/images/slider/Channel-Set-Engagement-Ring.png";
+import ring2 from "@/public/images/slider/eternity-ring.png";
+import ring3 from "@/public/images/slider/Halo-Engagement-Ring.png";
+import ring4 from "@/public/images/slider/Halo-Women-Engagement-Ring.png";
+import ring5 from "@/public/images/slider/pave-engagement-ring.png";
+import ring6 from "@/public/images/slider/Side-stone-Diamond-Engagement-Ring.png";
+import ring7 from "@/public/images/slider/Side-stone-Engagement-Ring.png";
+import ring8 from "@/public/images/slider/Solitaire-Classic-Engagement-Ring.png";
+import ring9 from "@/public/images/slider/Solitaire-Engagement-Ring.png";
+import ring10 from "@/public/images/slider/Three-stone-Engagement-Ring.png";
+
+
+export const SliderRings = [
+    {
+        id: 1,
+        title: "Channel-Set Engagement Ring",
+        image: ring1,
+    },
+    {
+        id: 2,
+        title: "Eternity Ring",
+        image: ring2,
+    },
+    {
+        id: 3,
+        title: "Halo Engagement Ring",
+        image: ring3,
+    },
+    {
+        id: 4,
+        title: "Halo Women Engagement Ring",
+        image: ring4,
+    },
+    {
+        id: 5,
+        title: "Pavé Engagement Ring",
+        image: ring5,
+    },
+    {
+        id: 6,
+        title: "Side-Stone Diamond Engagement Ring",
+        image: ring6,
+    },
+    {
+        id: 7,
+        title: "Side-Stone Engagement Ring",
+        image: ring7,
+    },
+    {
+        id: 8,
+        title: "Solitaire Classic Engagement Ring",
+        image: ring8,
+    },
+    {
+        id: 9,
+        title: "Solitaire Engagement Ring",
+        image: ring9,
+    },
+    {
+        id: 10,
+        title: "Three-Stone Engagement Ring",
+        image: ring10,
+    },
+];
+
+export const headingData = [
+    {
+        title: "James Allen's best selling",
+        subHeading: "Engagement Rings"
+    }
+]

@@ -6,11 +6,16 @@ import diamond from "@/public/images/Diamond_Sprite.png"
 const RingAnimation = () => {
     return (
         <>
-            <div className="w-[70%]  relative pt-10 ">
+            <div className="w-[50%]  relative pt-10 ">
+                <div className="inline-block h-full relative w-[1px]">
+                    <div className="h-[800px] relative origin-top w-[1166px]">
+                        <Image src={ring} alt="ring" className=" absolute z-[1] left-[-159px] top-[64px] mix-blend-darken border border-amber-50" />
+                    </div>
+                </div>
                 <span>
-                    <Image src={diamond} className=" absolute mix-blend-darken top-[5%] left-[33%]" />
+                    {/* <Image src={diamond} className=" absolute mix-blend-darken top-[5%] left-[33%]" /> */}
                 </span>
-                <Image src={ring} alt="ring" className=" mix-blend-darken relative top-[50%] " sizes="(max-width: 768px) 100vw, 50vw" />
+
             </div>
         </>
     )

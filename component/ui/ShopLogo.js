@@ -6,11 +6,11 @@ const ShopLogo = () => {
     return (
         <>
 
-            <ui className="flex justify-start  max-w-[1590px] min-w-[980px] m-auto list-none  relative z-20">
+            <ul className="flex justify-start  w-full max-w-[980px] md:max-w-[1200px] lg:max-w-[1590px] mx-auto px-4 list-none  relative z-20">
                 {LogoData.map((item, index) => {
                     return <li key={index}> <Link href='/'> <Image src={item.image} alt="Lgog Images" /> </Link> </li>
                 })}
-            </ui>
+            </ul>
 
         </>
     )

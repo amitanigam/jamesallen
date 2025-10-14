@@ -13,10 +13,10 @@ const SectionIntro = (props) => {
                 <h1 className="text-black uppercase text-[42px]">{subtitle}</h1>
                 <p className="text-black text-[18px] font-light  mb-10">{description}</p>
 
-                <div className=" flex gap-2  align-middle justify-center items-center mb-4">
-                    <Button variant="v3" className=" text-[11px]">start with a setting </Button>
+                <div className=" flex gap-2  justify-start items-center mb-4">
+                    <Button variant="v3" className=" text-[5px]">start with a setting </Button>
                     <span className=" text-black">OR</span>
-                    <Button variant="v3" className=" text-[11px]">start with a diamond </Button>
+                    <Button variant="v3" className=" text-[5px]">start with a diamond </Button>
                 </div>
 
                 <div className=" flex gap-1  align-middle justify-start ">
