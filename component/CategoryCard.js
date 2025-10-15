@@ -4,8 +4,6 @@ import Link from "next/link"
 
 const CategoryCard = () => {
 
-
-
     return (
         <>
 
