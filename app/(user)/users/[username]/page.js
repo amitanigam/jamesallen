@@ -65,20 +65,7 @@ export default function SingleProfile({ params }) {
                 </section>
 
                 <div className="mt-8 flex justify-center gap-4">
-                    <button
-                        onClick={() => {
-                            try {
-                                localStorage.removeItem("isLoggedIn");
-                                localStorage.removeItem("userEmail");
-                            } catch (err) {
-                                console.warn(err);
-                            }
-                            router.push("/");
-                        }}
-                        className="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-md transition"
-                    >
-                        Logout
-                    </button>
+
 
                     <button onClick={() => router.push("/")} className="border border-gray-200 px-5 py-2 rounded-md">
                         Home

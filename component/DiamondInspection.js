@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function DiamondInspection({
@@ -17,26 +18,29 @@ export default function DiamondInspection({
     const [loaded, setLoaded] = useState(false);
 
     return (
-        <section className="bg-white py-16">
-            <div className="max-w-[1200px] mx-auto px-6 md:px-10">
+        <section className="bg-[#fdfdfa] mb-40">
+            <div className="max-w-[100%] mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                     {/* Left: Image */}
                     <div className="order-1 md:order-0">
-                        <div className="relative overflow-hidden rounded-lg shadow-lg">
-                            <img
-                                src={imageSrc}
-                                alt="Diamond Inspection"
-                                onLoad={() => setLoaded(true)}
-                                className={`w-full h-auto object-cover block transform transition-all duration-700 ease-out ${loaded ? "opacity-100 scale-100" : "opacity-0 scale-95"
-                                    }`}
-                                style={{ maxHeight: 520 }}
-                            />
+                        <div className="relative overflow-hidden ">
+                            {/* Positioned wrapper with explicit height — Image fill will fill THIS box */}
+                            <div className="relative w-full pb-44 h-[280px] md:h-[420px] lg:h-[520px] flex items-center justify-center">
+                                <Image
+                                    src={imageSrc || "/images/diamond.png"}
+                                    alt="Diamond Inspection"
+                                    fill
+                                    className={`object-cover transition-all  duration-700 ease-out ${loaded ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+                                    onLoadingComplete={() => setLoaded(true)}
+                                    priority={false}
+                                />
+                            </div>
                         </div>
                     </div>
 
                     {/* Right: Content */}
                     <div className="order-0 md:order-1">
-                        <p className="text-sm font-medium text-gray-500 tracking-wide mb-3 uppercase">
+                        <p className="text-sm font-medium text-gray-500 tracking-wide mb-3 uppercase ">
                             {eyebrow}
                         </p>
 
@@ -44,9 +48,7 @@ export default function DiamondInspection({
                             {title}
                         </h2>
 
-                        <p className="text-gray-600 mb-6 max-w-xl leading-relaxed">
-                            {description}
-                        </p>
+                        <p className="text-gray-600 mb-6 max-w-xl leading-relaxed">{description}</p>
 
                         <Link href={ctaHref}>
                             <span className="inline-block border-b-2 border-pink-300 hover:border-pink-500 text-sm font-semibold text-pink-600 tracking-wide pb-0.5 transition-colors duration-200">

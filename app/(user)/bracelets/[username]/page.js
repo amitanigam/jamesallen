@@ -4,6 +4,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+import BraceletBanner from "@/component/ui/BraceletBanner";
+
 export default function BraceletsPersonal({ params }) {
     const router = useRouter();
     const [checking, setChecking] = useState(true);
@@ -39,9 +41,12 @@ export default function BraceletsPersonal({ params }) {
     }
 
     return (
-        <main className="min-h-screen bg-gray-50 flex items-start justify-center p-6 mt-[76px]">
-            <h1 className="text-3xl font-bold text-pink-600 mb-4">Dear {username}, Welcome 💎</h1>
-            <p className="text-gray-700 mb-6">Personalised bracelets for <strong>{userEmail}</strong>.</p>
-        </main>
+        <>
+            <main className="min-h-screen bg-gray-50 flex items-start justify-center p-6 mt-[76px]">
+
+
+                <BraceletBanner params={params} />
+            </main>
+        </>
     );
 }

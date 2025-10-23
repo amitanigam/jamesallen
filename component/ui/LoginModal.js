@@ -50,7 +50,7 @@ export default function LoginModal(props = {}) {
     const enteredPassword = password ?? "";
 
 
-    console.log("Trying login:", { enteredEmail, enteredPasswordPresent: !!enteredPassword });
+    // console.log({ enteredEmail, enteredPasswordPresent: !!enteredPassword });
 
 
     const match = enteredEmail.match(/^jwell([1-9]|1[0-9]|20)@example\.com$/);
@@ -62,18 +62,24 @@ export default function LoginModal(props = {}) {
     }
 
     if (match && enteredPassword === "123456") {
-
       try {
         localStorage.setItem("isLoggedIn", "true");
         localStorage.setItem("userEmail", enteredEmail);
-      } catch (err) {
-        console.warn("localStorage error:", err);
-      }
+      } catch (err) { console.warn(err); }
 
+      // analytics push
+      window.dataLayer = window.dataLayer || [];
+      const username = enteredEmail.split("@")[0];
+      const payload = {
+        event: "user_login",
+        user: { username, email: enteredEmail },
+        timestamp: new Date().toISOString()
+      };
+      window.dataLayer.push(payload);
+      console.log("dataLayer push:", payload);
 
-
+      // close modal, no redirect
       handleClose();
-
       setSubmitting(false);
       return;
     }

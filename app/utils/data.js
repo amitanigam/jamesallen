@@ -138,9 +138,115 @@ export const SliderRings = [
     },
 ];
 
+
+import ring11 from "@/public/images/slider2/asscher-Diamond.png";
+import ring22 from "@/public/images/slider2/cushion-Diamond.png";
+import ring33 from "@/public/images/slider2/emerald-Diamond.png";
+import ring44 from "@/public/images/slider2/heart-Diamond.png";
+import ring55 from "@/public/images/slider2/marquise-Diamond.png";
+import ring66 from "@/public/images/slider2/oval-Diamond.png";
+import ring77 from "@/public/images/slider2/pear-Diamond.png";
+import ring88 from "@/public/images/slider2/princess-Diamond.png";
+import ring99 from "@/public/images/slider2/radiant-Diamond.png";
+import ring100 from "@/public/images/slider2/round-Diamond.png";
+
+
+export const SliderRings2 = [
+    {
+        id: 1,
+        title: "Asscher Cut Diamond",
+        image: ring11,
+    },
+    {
+        id: 2,
+        title: "Cushion Cut Diamond",
+        image: ring22,
+    },
+    {
+        id: 3,
+        title: "Emerald Cut Diamond",
+        image: ring33,
+    },
+    {
+        id: 4,
+        title: "Heart Cut Diamond",
+        image: ring44,
+    },
+    {
+        id: 5,
+        title: "Marquise Cut Diamond",
+        image: ring55,
+    },
+    {
+        id: 6,
+        title: "Oval Cut Diamond",
+        image: ring66,
+    },
+    {
+        id: 7,
+        title: "Pear Cut Diamond",
+        image: ring77,
+    },
+    {
+        id: 8,
+        title: "Princess Cut Diamond",
+        image: ring88,
+    },
+    {
+        id: 9,
+        title: "Radiant Cut Diamond",
+        image: ring99,
+    },
+    {
+        id: 10,
+        title: "Round Brilliant Cut Diamond",
+        image: ring100,
+    },
+];
+
 export const headingData = [
     {
         title: "James Allen's best selling",
         subHeading: "Engagement Rings"
     }
 ]
+
+
+export const defaultItems = [
+    {
+        id: 1,
+        title: "ETERNITY RINGS",
+        desc:
+            "The ultimate symbol of lifelong commitment, eternity rings make for an ideal wedding or anniversary ring, or can be worn alongside your engagement ring.",
+        image: "/images/Eternity-Rings.jpg",
+        link: "#",
+        bgText: "eternity rings",
+    },
+    {
+        id: 2,
+        title: "GEMSTONE JEWELRY",
+        desc:
+            "Kissed by the colors of nature, sapphire, ruby, emerald, and moissanite jewelry makes for a stunningly exotic look.",
+        image: "/images/Gemstone-Rings.jpg",
+        link: "#",
+        bgText: "gemstone collection",
+    },
+    {
+        id: 3,
+        title: "MEN'S WEDDING RINGS",
+        desc:
+            "Match his style with the perfect wedding ring, be it traditional classic, rugged carved, elegant diamond, or funky alternative metal.",
+        image: "/images/Men-Wedding-Rings.jpg",
+        link: "#",
+        bgText: "men's wedding",
+    },
+    {
+        id: 4,
+        title: "DIAMOND STUDS",
+        desc:
+            "The perfect gift for any occasion, these handcrafted preset diamond studs make a bold yet elegant statement.",
+        image: "/images/image4.jpg",
+        link: "#",
+        bgText: "diamond studs",
+    },
+];
