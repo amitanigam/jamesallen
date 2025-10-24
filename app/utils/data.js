@@ -6,7 +6,7 @@ import img3 from "@/public/images/DiamondPendants.jpg";
 import img4 from "@/public/images/AnniversaryRings.jpg";
 import img5 from "@/public/images/EternityRings.jpg";
 
-
+ 
 export const DIAMONDS_DATA = [
     {
         image: img1,

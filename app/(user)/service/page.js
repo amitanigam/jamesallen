@@ -3,5 +3,5 @@ const Service = () => {
         <h1>I am service page !!</h1>
     )
 }
-
+ 
 export default Service

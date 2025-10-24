@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import BraceletBanner from "@/component/ui/BraceletBanner";
-
+ 
 export default function BraceletsPersonal({ params }) {
     const router = useRouter();
     const [checking, setChecking] = useState(true);

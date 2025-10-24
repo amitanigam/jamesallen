@@ -8,7 +8,7 @@ export default function BraceletsPersonal({ params }) {
     const [checking, setChecking] = useState(true);
     const [userEmail, setUserEmail] = useState(null);
     const [username, setUsername] = useState(null);
-
+ 
     useEffect(() => {
         Promise.resolve(params)
             .then((p) => {

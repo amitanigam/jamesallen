@@ -9,7 +9,7 @@ import FooterSubscribe from '@/component/FooterSubscribe'
 export const metadata = {
   title: "Jamesallen",
   description: "Jamesallen project",
-};
+}; 
 
 export default function RootLayout({ children }) {
   return (
