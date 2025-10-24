@@ -16,11 +16,11 @@ const NAV_ITEMS = [
 ];
 
 const Header = () => {
-    const router = useRouter(); // <- added
-    const [open, setOpen] = useState(false); // mobile menu
-    const [popupOpen, setPopupOpen] = useState(false); // login modal
+    const router = useRouter();
+    const [open, setOpen] = useState(false);
+    const [popupOpen, setPopupOpen] = useState(false);
     const [loggedIn, setLoggedIn] = useState(false);
-    const [username, setUsername] = useState(null); // derived from userEmail
+    const [username, setUsername] = useState(null);
 
 
     const syncLoggedInFromStorage = useCallback(() => {

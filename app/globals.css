@@ -248,3 +248,29 @@ body {
 .boxshad {
   box-shadow: 0 40px 72px -16px #00000038;
 }
+
+@keyframes sparkle {
+
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: scale(1.05) rotate(2deg);
+    opacity: 1;
+  }
+}
+
+.sparkle {
+  animation: sparkle 2.5s infinite ease-in-out;
+}
+
+.bgpo {
+  position: absolute;
+  z-index: 1;
+  right: 426px;
+  top: 138px;
+  background-position: left top -5548px;
+}

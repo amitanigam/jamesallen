@@ -51,7 +51,7 @@ export default function DiamondInspection({
                         <p className="text-gray-600 mb-6 max-w-xl leading-relaxed">{description}</p>
 
                         <Link href={ctaHref}>
-                            <span className="inline-block border-b-2 border-pink-300 hover:border-pink-500 text-sm font-semibold text-pink-600 tracking-wide pb-0.5 transition-colors duration-200">
+                            <span className="inline-block border-b-2 border-[#ff8081] hover:border-[#000] hover:text-[#000] text-sm font-semibold text-[#ff8081] tracking-wide pb-0.5 transition-colors duration-200">
                                 {ctaText}
                             </span>
                         </Link>

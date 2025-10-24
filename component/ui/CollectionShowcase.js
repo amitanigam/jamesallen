@@ -22,15 +22,7 @@ export default function CollectionShowcase({ items = null }) {
                                 className={`relative flex flex-col md:flex-row items-center gap-8 md:gap-12 ${isOdd ? "md:flex-row-reverse" : ""
                                     }`}
                             >
-                                {/* faded background word (desktop only) */}
-                                {/* <div
-                                    aria-hidden
-                                    className={`hidden md:block absolute top-[10%] transform -translate-y-1/2 pointer-events-none select-none text-[110px] lg:text-[140px] font-serif tracking-wide text-pink-100 opacity-10 ${isOdd ? "right-0 text-right" : "left-0 text-left"
-                                        }`}
-                                    style={{ lineHeight: 0.9 }}
-                                >
-                                    {item.bgText || ""}
-                                </div> */}
+
 
                                 {/* IMAGE WRAPPER */}
                                 <div className="relative w-full md:w-1/2 lg:w-[46%]">
@@ -59,7 +51,8 @@ export default function CollectionShowcase({ items = null }) {
                                             </p>
                                             <a
                                                 href={item.link || "#"}
-                                                className="inline-block text-sm font-semibold text-pink-600 hover:text-pink-700 border-b-2 border-pink-300 hover:border-pink-500 transition-colors"
+                                                className="inline-block text-sm font-semibold text-[#ff8081] hover:text-[#000] border-b-2
+                                                 border-[#ff8081] hover:border-[#000] transition-colors"
                                             >
                                                 EXPLORE
                                             </a>
@@ -67,8 +60,6 @@ export default function CollectionShowcase({ items = null }) {
                                     </div>
                                 </div>
 
-                                {/* right side blank when the image is left (we keep layout balanced) */}
-                                {/* <div className="w-full md:w-1/2 lg:w-[46%]"></div> */}
                             </div>
                         );
                     })}

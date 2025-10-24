@@ -107,7 +107,7 @@ export default function LoginModal(props = {}) {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mb-4 w-full rounded border border-gray-200 px-3 py-2 text-sm outline-none focus:border-pink-300"
+            className="mb-4 w-full rounded border border-gray-200 px-3 py-2 text-sm outline-none focus:border-[#ff8081]"
             placeholder="jwell1@example.com"
           />
 
@@ -122,7 +122,7 @@ export default function LoginModal(props = {}) {
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="mb-4 w-full rounded border border-gray-200 px-3 py-2 text-sm outline-none focus:border-pink-300"
+            className="mb-4 w-full rounded border border-gray-200 px-3 py-2 text-sm outline-none focus:border-[#ff8081]"
             placeholder="123456"
           />
 
@@ -131,7 +131,7 @@ export default function LoginModal(props = {}) {
           <button
             type="submit"
             disabled={submitting}
-            className="mb-6 w-full rounded-md bg-pink-400 px-4 py-2 text-sm font-medium text-white shadow-sm hover:opacity-95 disabled:opacity-60"
+            className="mb-6 w-full rounded-md bg-[#ff8081] px-4 py-2 text-sm font-medium text-white shadow-sm hover:opacity-95 disabled:opacity-60"
           >
             {submitting ? "Logging in..." : "LOGIN"}
           </button>

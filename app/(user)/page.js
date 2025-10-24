@@ -6,7 +6,7 @@ import SliderSection from '@/component/ui/SliderSection';
 import DiamondInspection from "@/component/DiamondInspection"
 import { SliderRings, SliderRings2 } from "@/app/utils/data";
 import Sparkle from '@/component/Sparkle'
-import FooterSubscribe from '@/component/FooterSubscribe'
+
 
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
         data={SliderRings2}
       />
       <Sparkle />
-      <FooterSubscribe />
+
 
     </>
 

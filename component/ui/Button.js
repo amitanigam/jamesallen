@@ -5,7 +5,7 @@ const VARIANT_CLASSES = {
 
     v2: "relative font-bold overflow-hidden border border-white bg-transparent text-white hover:bg-white hover:text-black transition-colors duration-300",
 
-    // ✅ v3 custom: 15px font, 12px 27px padding, pink hover
+
     v3: `
     relative overflow-hidden border border-black bg-transparent text-black
     text-[15px] px-[27px] py-[12px]
@@ -41,7 +41,7 @@ const Button = ({
 
     const content = (
         <>
-            {/* ✅ Hover pink fill left-to-right for v3 */}
+
             {variant === "v3" && (
                 <span
                     className="

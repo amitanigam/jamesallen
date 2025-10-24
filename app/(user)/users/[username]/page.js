@@ -47,7 +47,7 @@ export default function SingleProfile({ params }) {
     return (
         <main className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
             <div className="max-w-2xl w-full bg-white rounded-2xl shadow-md p-8 text-center">
-                <h1 className="text-3xl font-bold text-pink-600 mb-4">
+                <h1 className="text-3xl font-bold text-[#ff8081] mb-4">
                     Dear {username}, Welcome 💎
                 </h1>
 

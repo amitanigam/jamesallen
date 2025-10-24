@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../globals.css";
 import Navigation from "../../component/Navigation"
 import Footer from "@/component/Footer";
+import FooterSubscribe from '@/component/FooterSubscribe'
 
 export const metadata = {
   title: "Jamesallen",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className="overflow-x-hidden">
         <Navigation />
         {children}
+        <FooterSubscribe />
         <Footer />
       </body>
     </html>

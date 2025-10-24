@@ -65,7 +65,7 @@ export default function FooterSubscribe({ onSubmit }) {
                                 value={email}
                                 onChange={(ev) => setEmail(ev.target.value)}
                                 placeholder="Email Address..."
-                                className="w-[240px] bg-white md:w-[340px] lg:w-[420px] px-4 py-2 text-gray-900  focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-pink-400"
+                                className="w-[240px] bg-white md:w-[340px] lg:w-[420px] px-4 py-2 text-gray-900  focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-[#ff8081]"
                                 aria-invalid={!!error}
                                 aria-describedby={error ? "footer-sub-error" : undefined}
                             />
@@ -85,7 +85,7 @@ export default function FooterSubscribe({ onSubmit }) {
 
                 <div className="mt-3 md:mt-4 text-center md:text-center">
                     {error && (
-                        <p id="footer-sub-error" className="text-sm text-pink-200">
+                        <p id="footer-sub-error" className="text-sm text-[#ff8081]">
                             {error}
                         </p>
                     )}

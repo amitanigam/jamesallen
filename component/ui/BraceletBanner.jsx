@@ -5,12 +5,10 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function BraceletBanner({ params }) {
-    console.log(params)
     const router = useRouter();
     const [checking, setChecking] = useState(true);
     const [userEmail, setUserEmail] = useState(null);
     const [username, setUsername] = useState(null);
-
 
     useEffect(() => {
         Promise.resolve(params)
@@ -25,7 +23,6 @@ export default function BraceletBanner({ params }) {
                     setUserEmail(email);
                     setChecking(false);
                 } else {
-
                     router.push("/bracelets");
                 }
             })
@@ -40,51 +37,59 @@ export default function BraceletBanner({ params }) {
         );
     }
 
-    const originalPrice = 2590;
+    // Dynamic pricing
+    const originalPrice = 2120;
     const discount = 20;
     const discountedPrice = originalPrice - (originalPrice * discount) / 100;
 
     return (
-        <section className="relative w-[100%] flex flex-col lg:flex-row items-center justify-between bg-[#fdf4ec] px-8 md:px-16 py-12 overflow-hidden">
-            {/* Left side image */}
+        <section className="relative w-full flex flex-col lg:flex-row items-center justify-between bg-[#fdf4ec] px-8 md:px-16 py-12 overflow-hidden">
+            {/* Left Image */}
             <div className="flex justify-center lg:w-1/2">
                 <Image
-                    src="/images/banner_image.png" // replace with your actual image path
+                    src="/images/banner_image.png"
                     alt="Bracelet"
                     width={500}
                     height={500}
-                    className="object-contain "
+                    className="object-contain"
                     priority
                 />
             </div>
 
-            {/* Right side content */}
+            {/* Right Content */}
             <div className="lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0">
                 <h1 className="text-5xl font-extrabold tracking-wider text-[#6b0f0f] mb-4">
                     BRACELETS
                 </h1>
-                <p className="text-lg text-[#6b0f0f] mb-6 max-w-md mx-auto lg:mx-0">
-                    Wrap your wrists in diamond and gemstone bracelets set in rose gold, white gold,
-                    yellow gold, and platinum.
-                </p>
 
-                <h1 className="text-3xl font-bold text-[#6b0f0f] mb-4">Dear {username}, Welcome 💎</h1>
-                <p className="text-gray-700 mb-6">Personalised bracelets for <strong>{userEmail}</strong>.</p>
-
-                <div className="flex flex-col items-center lg:items-start space-y-2 mb-6">
-                    <p className="text-lg text-gray-700">
-                        <span className="line-through">${originalPrice.toLocaleString()}</span>{" "}
-                        <span className="text-2xl font-bold text-[#6b0f0f]">
+                <div className="text-lg text-[#6b0f0f] space-y-4 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                    <p>
+                        Dear <strong>{username || "Customer"}</strong>,
+                    </p>
+                    <p>
+                        As a valued customer who previously purchased the{" "}
+                        <strong>Flush Fit Pavé Diamond Wedding Ring in 14K Yellow Gold (1.50mm)</strong>,
+                        you’re now exclusively eligible for{" "}
+                        <strong>{discount}% off</strong> on our elegant{" "}
+                        <strong>
+                            Bezel Tennis Bracelet featuring 2 CTW Lab-Grown Diamonds in 14K Yellow Gold
+                        </strong>.
+                    </p>
+                    <p>
+                        <strong>Original Price:</strong> ${originalPrice.toLocaleString()}
+                        <br />
+                        <strong>Your Price:</strong>{" "}
+                        <span className="text-[#6b0f0f] font-bold">
                             ${discountedPrice.toLocaleString()}
                         </span>
                     </p>
-                    <span className="bg-[#6b0f0f] text-white text-sm font-semibold px-4 py-1 rounded-full">
-                        {discount}% OFF
-                    </span>
+                    <p>
+                        Enjoy this special offer as our thank you for your continued trust 💎
+                    </p>
                 </div>
 
-                <button className="bg-[#6b0f0f] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#4e0b0b] transition">
-                    SHOP BRACELETS
+                <button className="mt-8 bg-[#6b0f0f] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#4e0b0b] transition">
+                    SHOP NOW
                 </button>
             </div>
         </section>
