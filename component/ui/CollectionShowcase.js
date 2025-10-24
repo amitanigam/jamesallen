@@ -12,7 +12,7 @@ export default function CollectionShowcase({ items = null }) {
 
     return (
         <section className="relative bg-[#fbf7f3] py-24">
-            <div className="max-w-7xl mx-auto px-6 md:px-10">
+            <div className="max-w-7xl mx-auto px-6 md:px-15">
                 <div className="space-y-28">
                     {list.map((item, i) => {
                         const isOdd = i % 2 === 1;

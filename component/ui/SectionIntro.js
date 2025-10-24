@@ -8,7 +8,7 @@ const SectionIntro = (props) => {
     return (
         <>
 
-            <div className="w-[50%] pl-[9%]  pt-[7%]">
+            <div className="w-[58%] pl-[9%]  pt-[7%]">
                 <h5 className=" text-3xl uppercase text-black">{title}</h5>
                 <h1 className="text-black uppercase text-[42px]">{subtitle}</h1>
                 <p className="text-black text-[18px] font-light  mb-10">{description}</p>

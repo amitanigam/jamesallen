@@ -105,7 +105,7 @@ const Header = () => {
                                 <Link
                                     key={item}
                                     href={item === "BRACELETS" ? braceletsHref() : `/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                                    className="text-[13px] uppercase tracking-wider text-gray-600 hover:text-gray-900"
+                                    className="text-[11px] uppercase tracking-wider text-gray-600 hover:text-gray-900"
                                 >
                                     {item}
                                 </Link>

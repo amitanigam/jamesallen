@@ -21,13 +21,13 @@ const Home = () => {
       <SliderSection heading="JAMES ALLEN'S BEST SELLING"
         subheading="Engagement Rings"
         data={SliderRings}
-        visible={5} />
+      />
       <DiamondInspection imageSrc="/images/diamond.png" ctaHref="/book" />
       <SliderSection heading="EXPERIENCE THE"
         subheading="DIAMOND REVOLUTION"
         subline="Spin actual diamonds in 360° HD and zoom in up to 40x. One of the world's biggest collections of loose diamonds, at your fingertips."
         data={SliderRings2}
-        visible={5} />
+      />
       <Sparkle />
       <FooterSubscribe />
 

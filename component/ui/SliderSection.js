@@ -8,7 +8,7 @@ import HeadingCom from "./HeadingCom";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 export default function SliderSection({
-    visible = 5,
+    visible = 6,
     data = [], // <== dynamic images & titles
     heading = "Default Heading", // <== dynamic heading
     subheading = "Default Subheading", // <== dynamic subheading
@@ -27,8 +27,8 @@ export default function SliderSection({
     useEffect(() => {
         function calc() {
             const w = window.innerWidth;
-            if (w >= 1600) setSlidesToShow(Math.min(5, visible));
-            else if (w >= 1280) setSlidesToShow(Math.min(4, visible));
+            if (w >= 1600) setSlidesToShow(Math.min(3, visible));
+            else if (w >= 1280) setSlidesToShow(Math.min(3, visible));
             else if (w >= 900) setSlidesToShow(Math.min(3, visible));
             else if (w >= 640) setSlidesToShow(2);
             else setSlidesToShow(1);
